@@ -1,6 +1,9 @@
 import React from 'react'
 import {Form} from 'semantic-ui-react'
 import './Login.css'
+// 引入withRouter实现编程式导航
+import {withRouter} from 'react-router-dom'
+
 class Login extends React.Component {
   constructor(props) {
     super(props)
@@ -74,4 +77,4 @@ class Login extends React.Component {
     )
   }
 }
-export default Login
+export default withRouter(Login)
