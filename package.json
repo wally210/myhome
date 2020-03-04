@@ -12,6 +12,7 @@
     "react-image-gallery": "^1.0.6",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
+    "react-touch-loader": "^1.1.4",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.88.2"
   },
@@ -35,5 +36,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0"
   }
 }
