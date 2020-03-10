@@ -31,6 +31,8 @@ class Login extends React.Component {
     if(meta.status === 200) {
       //1. 把token给保存到浏览器本地
       localStorage.setItem('myToken', data.token)
+      // 保存用户id，my组件用户信息需要数据
+      localStorage.setItem('uid', data.uid)
       //2. 跳转到home组件
       history.push('/home')
     }else {
