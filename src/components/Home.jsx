@@ -4,9 +4,8 @@ import { Grid } from 'semantic-ui-react'
 import { NavLink, Switch, Route } from 'react-router-dom'
 import Main from './home/Main'
 import Info from './home/Info'
-import Chat from './home/Chat'
+import Chat from './home/chat/Chat'
 import My from './home/My'
-import Demo from './home/demo/Demo'
 import '../assets/fonts/iconfont.css'
 
 class Home extends React.Component {
@@ -17,7 +16,7 @@ class Home extends React.Component {
           <Switch>
             <Route exact path="/home" component={Main}></Route>
             <Route path="/home/info" component={Info}></Route>
-            <Route path="/home/chat" component={Demo}></Route>
+            <Route path="/home/chat" component={Chat}></Route>
             <Route path="/home/my" component={My}></Route>
           </Switch>
         </div>
